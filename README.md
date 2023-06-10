@@ -11,6 +11,7 @@ A nossa Landing Page foi desenvolvida com o objetivo de fornecer uma experiênci
 
 <h2>Conteúdo relevante:</h2> Disponibilizamos uma variedade de conteúdos cuidadosamente selecionados para auxiliar os visitantes em suas jornadas. Desde artigos informativos até estudos de caso inspiradores, há algo para todos os interessados.
 
-<h2>Formulário de contato:</h2> Se você tiver alguma dúvida, sugestão ou solicitação, nosso formulário de contato está à sua disposição. Teremos prazer em responder e ajudar da melhor maneira possível.
+<h2>Formulário de contato:</h2> Se você tiver alguma dúvida, sugestão ou solicitação, nosso formulário de contato está à sua disposição. Teremos prazer em responder e ajudar da melhor maneira possível.<br/>
 
 <img src="https://github.com/Julia-Veras/landing-page---KE/assets/104529438/8a32965c-b6f2-4135-8b34-d4201eb03f9d)" width="700"/>
+<img src="https://github.com/Julia-Veras/landing-page---KE/assets/104529438/1698be9c-6e51-44a6-9485-dbdcd2d901d3" width"100" height="390"/> 

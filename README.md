@@ -13,6 +13,4 @@ A nossa Landing Page foi desenvolvida com o objetivo de fornecer uma experiênci
 
 <h2>Formulário de contato:</h2> Se você tiver alguma dúvida, sugestão ou solicitação, nosso formulário de contato está à sua disposição. Teremos prazer em responder e ajudar da melhor maneira possível.
 
-![tela-1](https://github.com/Julia-Veras/landing-page---KE/assets/104529438/97eaf553-94f7-4dd8-a5ad-08cb541468f
-
-
+<img src="https://github.com/Julia-Veras/landing-page---KE/assets/104529438/8a32965c-b6f2-4135-8b34-d4201eb03f9d)" width="700"/>

@@ -385,6 +385,12 @@ div.roda-pe-right i:hover{
 
 
 @media only screen and (max-width: 1500px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 15vh;
+    }
     div.home-text{
         width: 45%;
         margin-left: 50px;
@@ -401,9 +407,19 @@ div.roda-pe-right i:hover{
     section#areas{
         margin-top: 70%;
     }
-    footer#contato{
-        bottom: -260%;
+
+    div.escrit-right{
+        height: 60vh;
     }
+    footer#contato{
+        height: 80vh;
+        bottom: -320%;
+    }
+
+    div.roda-pe{
+        top: 10%;
+    }
+    
 }
 
 @media screen and (max-width: 1300px){

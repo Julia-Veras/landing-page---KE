@@ -1,0 +1,1122 @@
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(43, 7, 7);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #6E3C38;    /* color of the scroll thumb */
+    border-radius: 0px 0px 20px 20px;       /* roundness of the scroll thumb */
+    border: 3px solid pink;  /* creates padding around scroll thumb */
+  }
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth !important;
+}
+body{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background: #6E3C38;
+    font-family: Calibri;
+    scroll-behavior: smooth !important;
+}
+header{
+    background: #E0D0BF;
+    width: 100%;
+    height: 92vh;
+    position: absolute;
+}
+nav{
+    width: 100%;
+    height: 12vh;
+    background: #FDF4EB;
+}
+nav img{
+    margin: 10px 100px;
+    position: relative;
+    left: 10%;
+}
+nav ul{
+    float: right;   
+    margin-right: 150px;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: #6E3C38;
+    font-size: 1.5rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+li >  a:hover{
+    background: #6E3C38;
+    color: #FDF4EB;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background-color: #6E3C38;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .7s ease;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #E0D0BF;
+}
+
+#myBtn:hover {
+    background-color: #E0D0BF;
+    border: 2px solid #6E3C38;
+}
+
+/* ---------CONTEUDO--------------- */
+/* ---------SECTION HOME-------------- */
+section#home{
+    width: 100%;
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    scroll-snap-align: end;
+}
+div.home-text{
+    width: 50%;
+    height: 40vh;
+    color: #6E3C38;
+    margin: 140px 0px 0px 0px;
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+    animation: cor 7s infinite;
+}
+div.home-text h1{
+    font-size: 4rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+div.home-text p{
+    font-size: 2rem;
+}
+.face{
+    width: 850px;
+    height: 500px;
+    perspective: 700px; 
+    animation: fundo 5s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.front{
+    z-index: 1;
+}
+.front, .back{
+    position: absolute;
+}
+.face .front{
+    transform: rotateY(180deg);
+}
+.face .back{
+    transform: rotateY(0);
+    backface-visibility: hidden;
+    animation: apa 5s infinite;
+    z-index: -99;
+}
+/* ---------FIM-------- */
+
+/* ---------SECTION ESCRITÓTIO-------------- */
+section#escritorio{
+    background: #E0D0BF;
+    width: 100%;
+    height: 91.5vh;
+    position: absolute;
+    top: 100%;
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+div.escrit-left{
+    width: 500px;
+    height: 55vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    animation:  moveLeftToLeft 1.5s backwards;
+}
+section#escritorio img{
+    border-radius: 55px;
+}
+
+div.escrit-right{
+    width: 500px;
+    height: 55vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation:  moveLeftToRight 1.5s backwards;
+    border: 0px 5px 5px 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 55px;
+}
+div.escrit-text{
+    width: 490px;
+    height: 40vh;
+    color: #6E3C38;
+    margin-top: 50px;
+    text-align: center;
+}
+div.escrit-text h1{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+div.escrit-text p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/* ---------FIM--------- */
+
+/* ---------SECTION ÁREAS-------------- */
+section#areas{
+    background: #E0D0BF;
+    width: 100%;
+    height: 91.5vh;
+    position: absolute;
+    top: 100%;
+    margin-top: 55%;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.areas-conteudo{
+    width: 100%;
+    height: 80vh;
+    flex-wrap: wrap;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.areas-conteudo h1{
+    font-size: 5rem;
+    color: #6E3C38;
+    text-align: center;
+}
+div.areas-icons{
+    width: 90%;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    
+}
+div.areas-icons i{
+    font-size: 4rem;
+    color: #6E3C38;
+}
+div.areas-icons h1{
+    font-size: 2.5rem;
+    margin-top: 8px;
+}
+div.icon{
+    margin: 45px;
+    width: 25%;
+    height: 15vh;
+    text-align: center;
+}
+
+/* ---------FIM--------- */
+
+/* ---------SECTION CONTATOS-------------- */
+footer#contato{
+    background: #6E3C38;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: -270%;
+    margin-top: 85%;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.roda-pe{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    position: absolute;
+    width: 40%;
+    height: 60vh;
+    top: -15%;
+    justify-content: center;
+    align-items: center;
+}
+div.roda-pe-left{
+    width: 500px;
+    height: 45vh;
+    position: relative;
+}
+iframe{
+    width: 100%;
+    height: 45vh;
+    border-radius: 5px;
+}
+div.roda-pe-right{
+    width: 300px;
+    height: 10vh;
+    position: relative;
+    display: flex;  
+    align-items: center;
+}
+div.roda-pe-right i{
+    margin: 20px;
+    font-size: 55px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+div.e-mail i{
+    font-size: 50px;
+}
+div.roda-pe-right i:hover{
+    color: #6E3C38;
+    background: #E0D0BF;
+}
+
+
+@keyframes cor 
+{
+    5%{
+        color: #6E3C38;
+    }    
+    50%{
+        color: white;
+    }
+    100%{
+        color: #6E3C38;
+    }
+}
+
+@keyframes fundo 
+{
+    5%{
+        transform: scaleX(-1);
+    }    
+    50%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes apa 
+{
+    5%{
+        z-index: -99;
+    }    
+    50%{
+        z-index: 99;
+    }
+    100%{
+        z-index: -99;
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translatex(400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeftToLeft {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+@media only screen and (max-width: 1500px){
+    div.home-text{
+        width: 45%;
+        margin-left: 50px;
+        position: relative;
+        top: -10%;
+    }
+    div.home-text p{
+        font-size: 1.7rem;
+
+    }
+    .face img{
+        width: 600px;
+    }
+    section#areas{
+        margin-top: 70%;
+    }
+    footer#contato{
+        bottom: -260%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+
+
+    nav{
+        width: 100%;
+    }
+    nav img{
+        left: 2%;
+        margin-right: 0;
+    }
+    nav ul{
+        margin-left: -50px;
+    }
+   
+    section#home{
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        top: 12%;
+    }
+    div.home-text{
+        width: 50%;
+        left: 0%;
+        top: -12%;
+    }
+    .face{
+        width: 900px;
+        height: 300px;
+    }
+    .face img{
+        width: 500px;
+    }
+    section#escritorio{
+        height: 90vh;
+    }
+    section#areas{
+        margin-top: 80%;
+    }
+    div.areas-conteudo{
+        flex-wrap: wrap;
+        height: 100vh;
+        margin-top: 0%
+    }
+    div.areas-conteudo h1{
+        margin-bottom: 60%;
+    }
+    div.areas-icons{
+        margin-top: -60%;
+    }
+    footer#contato{
+        bottom: -270%;
+    }
+    div.roda-pe-right{
+        width: 30%;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 1132px){
+    nav{
+        z-index: 1;
+    }
+    nav img{
+        left: -5%;
+    }
+    nav ul{
+        margin-left: -0px;
+        z-index: 99;
+    }
+    section#home{
+        flex-wrap: wrap-reverse;
+        height: 100vh;
+    }   
+    div.home-text{
+        width: 60%;
+        left: -20%;
+        top: -20%;
+    }
+    div.home-text h1{
+        font-size: 3rem;
+    }
+    div.home-text p{
+        font-size: 1.8rem;
+    }
+    .face{
+        position: relative;
+        top: 2%;
+        left: -5%;
+        z-index: 2;
+    }
+    section#areas{
+        margin-top: 110%;
+    }
+    footer#contato{
+        bottom: -300%;
+    }
+    div.roda-pe-right{
+       width: 50%;
+       justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 929px){
+    nav ul{
+        margin-right: 55px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    nav img{
+        left: -5%;
+        margin-right: 0;
+    }
+    nav ul{
+        margin-right: 55px;
+    }
+    div.home-text{
+        top: -15%;
+    }
+    div.home-text h1{
+        font-size: 3rem;
+    }
+    div.home-text p{
+        font-size: 1.5rem;
+    }
+    .face{
+        left: 0;
+    }
+    div.escrit-left{
+        position: relative;
+        left: 2%;
+    }
+    div.escrit-right{
+        position: relative;
+        width: 50%;
+        right: 3%;
+    }
+    div.escrit-text{
+        text-align: left;
+        width: 100%;
+        margin-top: 5%;
+    }
+    div.escrit-text p{
+        font-size: 1.5rem;
+    }
+    footer#contato{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        display: flex;
+    }
+
+    div.roda-pe-left{
+        margin-bottom: 5%;
+        margin-left: 55px;
+    }
+    div.roda-pe-right{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 866px){
+    nav{
+        z-index: 99;
+        height: 15vh;
+        position: fixed;
+    }
+    nav img{
+        margin-left: 150px;
+    }
+    .checkbtn{
+        display: block;
+        color: #6E3C38;
+        font-size: 60px;
+        margin-right: 100px;
+        margin-top: 15px;
+        transition: all 7s ease-in;
+    }
+    ul{
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        height: 150vh;
+        background: #6E3C38;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 80px;
+    }
+    nav ul li a{
+        font-size: 30px;
+        color: #E0D0BF;
+    }
+    li > a:hover{
+        background: #E0D0BF;
+        color: #6E3C38;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    div.home-text{
+        top: -20%;
+    }
+    div.home-text p{
+        font-size: 1.4rem;
+    }
+    .face img{
+        width: 450px;
+    }
+    div.areas-conteudo h1{
+        font-size: 4rem;
+    }
+    div.icon h1{
+        font-size: 30px;
+    }
+    div.ju-espe h1{
+        font-size: 25px;
+    }
+    section#escritorio{
+        height: 90vh;
+        position: absolute;
+    }
+    div.escrit-left{
+        position: relative;
+        top: 10%;
+        left: 2%;
+        margin-right: 0%;
+    }
+    div.escrit-left img{
+        width: 350px;
+    }
+    div.escrit-right{
+        position: relative;
+        top: 5%;
+        right: 0%;
+        width: 70%;
+        height: 55%;
+        animation:  moveLeftToBottom 1.5s backwards;
+    }
+    div.escrit-text{
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
+        border-radius: 55px;
+    }
+    div.escrit-text h1{
+        margin-bottom: 0%;
+    }
+    .areas-titu{
+        margin-top: 8%;
+    }
+    div.areas-icons .icon{
+        width: 228px;
+    }
+   
+}
+@media (max-width: 844px){
+    section#areas{
+        height: 110vh;
+    }
+    div.areas-icons{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 785px){
+    div.escrit-left img{
+        width: 340px;
+    }
+    div.escrit-right{
+        width: 490px;
+        top: 7%;
+        right: 2%;
+    }
+    div.escrit-text h1{
+        font-size: 60px;
+        margin-left: 10px;
+    }
+    div.escrit-text p{
+        font-size: 22.5px;
+        margin-left: 2px;
+    }
+    section#areas{
+        height: 110vh;
+    }
+    div.areas-icons{
+        width: 80%;
+    }
+    div.icon{
+        margin: 0% -5%;
+    }
+}
+
+@media screen and (max-width: 750px){
+ 
+    #myBtn {
+        right: 5px;
+        bottom: 40px;
+    }
+    nav{
+        height: 13.5vh;
+    }
+    nav img{
+        left: -5%;
+    }
+    .checkbtn{
+        margin-right: 50px;
+        font-size: 50px;
+    }
+    header{
+        width: 110%;
+        height: 95vh;
+    }
+    nav ul li a{
+        font-size: 28px;
+    }
+
+    section#home{                                                                                                                                            
+        width: 100%;
+        top: 0%;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+    }
+    div.home-text{
+        width: 600px;
+        top: -2%;
+        left: 2%;
+    }
+    div.home-text p{
+        font-size: 1.8rem;
+    }
+    .face{
+        left: 5%;
+        top: 15%;
+    }
+    .face img{
+        width: 450px;
+    }
+
+    section#home img{margin-top: 15px;
+    }
+
+    section#escritorio, section#areas, footer#contato{
+        width: 110%;
+    }
+
+
+
+
+
+
+
+    section#escritorio{
+        flex-wrap: wrap;
+        margin-top: 20%;
+        margin-bottom: -2px;
+        height: 100vh;
+    }
+    div.escrit-left{
+        margin-top: -5%;
+        width: 350px;
+    }
+    div.escrit-left img{
+        width: 350px;
+    }
+    div.escrit-right{
+        width: 90%;
+        height: 30vh;
+        margin-top: -21%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        animation:  moveLeftToBottom 1.5s backwards;
+    }
+    div.escrit-text{
+        width: 100%;
+        height: 100%;
+        color: #6E3C38;
+    }
+    div.escrit-text h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    div.escrit-text p{
+        font-size: 20px;
+    }
+
+
+
+    section#areas{
+        margin-top: 160%;
+        width: 110%;
+    }
+    div.areas-icons{
+        width: 78%;
+        height: 50vh;
+    } 
+    div.icon{
+        text-align: center;
+    }
+    div.ju-espe h1{
+        width: 250px;
+        margin-left: 0%;
+        font-size: 28px;
+    }
+    div.consu h1{ 
+        margin-left: 12%;
+    }
+    footer#contato{
+        height: 80vh;
+        bottom: -340%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        z-index: 99;
+    }
+    div.roda-pe{
+        width: 80%;
+        top: 10%;
+    }
+    div.roda-pe-left{
+        width: 400px;
+        top: 10%;
+        left: -5%;
+    }
+    div.roda-pe-right{
+        width: 80%;
+    }
+    iframe{
+        width: 400px;
+        left: 0%;
+    }
+}
+
+
+
+@media screen and (max-width: 606px) and (min-width: 400px){
+    nav img{
+        margin-left: 100px;
+    }
+    .face{
+        width: 400px;
+    }
+    .face img{
+        width: 400px;
+    }
+    div.home-text{
+        width: 95%;
+        left: -6%;
+        top: -3%;
+    }
+    div.home-text p{
+       font-size: 24px;
+    }
+   
+    div.escrit-left{
+        left: -8%;
+    }
+    div.escrit-right{
+        border-radius: 5px;
+    }
+    div.escrit-text  h1{
+        font-size: 3.4rem;
+    }
+    div.escrit-text p{
+        font-size: 18px;
+    }
+
+    
+    section#areas{
+        margin-top: 190%;
+    }
+    div.areas-icons{
+        width: 92%;
+    }
+    div.areas-conteudo  h1{
+        font-size: 3.5rem;
+    }
+    div.areas-icons{
+        width: 80%;
+        height: 50vh;
+    }
+    div.icon h1{
+        margin-left: 35px;
+        font-size: 30px;
+    }   
+    div.civil h1{
+        margin-left: -2px;
+    }
+    div.ju-espe h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+        margin-left: -2%    ;
+    }
+    div.admin, div.consu{
+        margin-top: 30px;
+    }
+    div.admin h1{
+        margin-left: -5%;
+    }
+    header, section#home, section#escritorio, section#areas, footer#contato{
+        width: 112%;
+    }
+}
+
+@media only screen and (max-width: 404px){
+    div.areas-icons{
+        width: 93%;
+    }
+    header, section#home, section#escritorio, section#areas, footer#contato{
+        width: 114%;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    nav img{
+        margin-left:80px;
+        width: 60px;
+        margin-top: 15px;
+    }
+    .face{
+        top: 15%;
+        left: 0%;
+    }
+    .face img{
+        width: 350px;
+    }
+    div.home-text{
+        left: 0%;
+        top: 3%;
+        width: 90%;
+        margin: 0;
+    }
+    div.home-text h1{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    div.home-text p{
+        font-size: 22.5px;
+    }
+
+
+
+    section#escritorio{
+        height: 130vh;
+    }
+    div.escrit-left{
+        width: 320px;
+        left: 3%;
+        top: 12%;
+        margin-top: -50px;
+        margin-bottom: 0%;
+    }
+    div.escrit-left img{
+        width: 300px;
+    }
+    div.escrit-right{
+        height: 60vh;
+        width: 100%;
+        top: 3%;
+        border-radius: 4px;
+        margin-bottom: 0%;
+        border-width: 12px;
+    }
+    div.escrit-text{
+        margin-left: 1px;
+        margin-top: 0%;
+    }
+    div.escrit-text h1{
+        font-size: 40px;
+    }
+    div.escrit-text p{
+        font-weight: 300;
+        font-size: 25px;
+        margin-top: 5%;
+    }
+
+    section#areas{
+        margin-top: 320%;
+        height: 100vh;
+    }
+    div.areas-conteudo{
+        margin-top: 0%;
+    }
+    div.areas-conteudo h1.areas-titu{
+        font-size: 3rem;
+        margin-top: 15%;
+    }
+    div.areas-icons{
+        width: 95%;
+    }
+    div.icon h1{
+        margin-left: 6%;
+        font-size: 22px;
+    }
+
+    div.ju-espe h1{
+        margin-left: -10px;
+    }
+    div.admin, div.consu{
+        margin-top: 30px;
+    }
+    div.consu h1{
+        margin-left: 25px;
+    }
+    header, section#home, section#escritorio, section#areas, footer#contato{
+        width: 120%;
+    }
+
+    footer#contato{
+        bottom:  -370%;
+    }
+    div.roda-pe{
+        width: 100%;
+        height: 60vh;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    div.roda-pe-right{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+    div.roda-pe-left{
+        margin: 0%;
+        margin-left: -2%;
+    }
+
+}
+@media screen and (max-width: 333px) {
+    nav img{
+        margin-left:50px;
+    }
+    .checkbtn{
+        margin-right: 30px;
+    }
+    .face img{
+        width: 350px;
+    }
+    div.home-text{
+        margin: 0;
+        margin-top: 50%;
+        top: -8%;
+        left: 2%;
+        width: 95%;
+        height: 35vh;
+    }
+    div.home-text h1{
+        font-size: 3rem;
+        margin-top: 2%;
+    }
+    div.home-text p{
+        font-size: 21px;
+    }
+
+    section#areas{
+        top: 240%;
+    }
+    div.areas-icons{
+        width: 100%;
+        height: 50vh;
+        margin-top: -85%;
+    }
+    
+    div.areas-icons .icon{
+        width: 185px;
+    }
+    div.icon h1{
+        width: 165px;
+        margin-left: 15px;
+    }
+    section#home, section#escritorio, section#areas{
+        width: 120%;
+        margin: 0;
+    }
+    footer#contato{
+        bottom: -330%;
+    }
+    div.roda-pe{
+        justify-content: center;
+        align-items: center;
+    }
+    iframe
+    {
+        position: relative;
+        left: 15%;
+        width: 300px;
+    }
+}
+
+@keyframes moveLeftToBottom {
+    0% {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

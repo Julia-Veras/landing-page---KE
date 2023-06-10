@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./icones/css/all.css">
+</head>
+<script>
+    myfunction =(icon) => icon.classList.toggle
+('fa-close')
+</script>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-bounce"></i></button>
+                        <header>
+                            <nav class="nav">  
+                                <input type="checkbox" id="check">
+                                <label for="check" class="checkbtn">
+                                    <i class="fa-solid fa-bars icon"  onclick="myfunction(this)"></i>
+                                
+                                </label>
+                                <img src="./img/logo.png" width="75">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#escritorio" onclick="toggleP()">Escritório</a></li>
+                                    <li><a href="#areas">Áreas</a></li>
+                                    <li><a href="#contato">Contato</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+
+    <section id="home">
+
+                <div class="home-text">
+                    <h1>Klivia Eufrasio</h1>
+                    <p>  Uma profissional altamente capacitada, com amplo conhecimento em sua área de atuação, o que se reflete em resultados consistentes e de alta qualidade. Sua habilidade em entender suas necessidadeespecíficas e propor soluções eficazes é verdadeiramente notável. </p>
+                </div>
+
+                <div class="face">
+                    <div class="front"> <img src="./img/card-front.jpeg" width="600"> </div>
+                    
+                    <div class="back">  <img src="./img/card-back.jpeg" width="600"> </div>
+                </div>
+
+    </section>
+
+
+    <section id="escritorio">
+        <div class="escrit-left" id="escrit-left"><img src="./img/fundo-2.jpeg" width="400"></div>
+
+        <div class="escrit-right" id="escrit-right">
+            <div class="escrit-text">
+                <h1>O Escritório</h1>
+                <p>O escritório de advocacia é um local de trabalho especializado em oferecer serviços jurídicos e assessoria legal. Composto por advogados experientes e qualificados, seu objetivo principal é fornecer suporte e representação aos clientes em questões legais. Em um escritório de advocacia, é comum encontrar diferentes áreas de atuação, como direito civil, penal, trabalhista, tributário e empresarial, entre outras.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas">
+
+        <div class="areas-conteudo">
+            
+            <h1 class="areas-titu">Áreas de atuação</h1>
+            
+            <div class="areas-icons">
+                <div class="tribu icon">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h1>TRIBUTÁRIO</h1>
+                </div>
+
+                <div class="empre icon">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass-dollar"></i>
+                    <h1>EMPRESARIAL</h1>
+                </div>
+
+                <div class="ju-espe icon">           
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <h1>JUIZADOS ESPECIAIS</h1>
+                </div>
+
+                <div class="civil icon">      
+                    <i class="fa-sharp fa-solid fa-building-columns"></i>
+                    <h1>CIVIL</h1>
+                </div>
+
+                <div class="admin icon">
+                    <i class="fa-sharp fa-solid fa-file-invoice-dollar"></i>
+                    <h1>ADMINISTRATIVO</h1>
+                </div>
+                
+                <div class="consu icon">
+                    <i class="fa-sharp fa-solid fa-building-columns"></i>
+                    <h1>CONSUMIDOR</h1>
+                </div>
+            </div>
+
+        </div>
+   
+
+    </section>
+
+    <footer id="contato">
+        <div class="roda-pe">
+        <div class="roda-pe-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.937924570543!2d-38.570171524093546!3d-3.8234711436650843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74e07a1a2ffcf%3A0x30f4159d5b2ab446!2sR.%2015%2C%2039%20-%20Mondubim%2C%20Fortaleza%20-%20CE%2C%2060810-670!5e0!3m2!1spt-BR!2sbr!4v1686335461384!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="roda-pe-right">
+            <div class="contato"><a href="https://wa.me/5585986985428"> <i class="fa-brands fa-whatsapp"></i></a></div>
+            <div class="e-mail"><a href="mailto:kliviakarolina@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i></a></div>
+            <div class="insta"><a href="https://instagram.com/kliviaeufrasio?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+    </div>
+    </footer>
+</body>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    
+        function toggleP(){
+            let div  = document.getElementById("escrit-left", "escrit-right");                                                                                                                             
+            let vid  = document.getElementById("escrit-right");
+            if(div.style.animation === "block" && vid.style.display === "block")
+               {
+                div.style.display = "none";
+                vid.style.display = "none";
+            }else{
+                div.style.display = "block";
+                vid.style.display = "block";
+            }
+        }
+    </script>
+</html>

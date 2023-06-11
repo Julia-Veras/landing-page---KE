@@ -931,9 +931,13 @@ div.roda-pe-right i:hover{
     header, section#home, section#escritorio, section#areas, footer#contato{
         width: 112%;
     }
+    .roda-pe-left{
+        left: 5%;
+    }
 }
 
 @media only screen and (max-width: 404px){
+    nav ul{margin-top: 5px;}
     div.areas-icons{
         width: 93%;
     }
@@ -1062,7 +1066,7 @@ div.roda-pe-right i:hover{
     }
     div.roda-pe-left{
         margin: 0%;
-        margin-left: -2%;
+        margin-left: 8%;
     }
 
 }

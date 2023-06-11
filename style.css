@@ -841,7 +841,6 @@ div.roda-pe-right i:hover{
         bottom: -340%;
         display: flex;
         flex-wrap: wrap-reverse;
-        z-index: 99;
     }
     div.roda-pe{
         width: 80%;

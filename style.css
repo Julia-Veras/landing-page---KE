@@ -937,6 +937,9 @@ div.roda-pe-right i:hover{
     div.areas-icons{
         width: 93%;
     }
+    div.escrit-right{
+        margin-top: 16%;
+    }
     header, section#home, section#escritorio, section#areas, footer#contato{
         width: 114%;
     }
@@ -1087,6 +1090,10 @@ div.roda-pe-right i:hover{
     }
     div.home-text p{
         font-size: 21px;
+    }
+
+    div.escrit-right{
+        margin-top: -10%;
     }
 
     section#areas{
